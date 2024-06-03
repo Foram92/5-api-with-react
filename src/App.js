@@ -12,13 +12,14 @@ function App () {
         //console.log('Do a search with ', term);
 
         //pass term to SearchImages function; term is what user type in input box
+        //for SearchImages watch api.js
         const result = await SearchImages(term);
 
         setImages (result);
     }
 
     return (
-        //here we had pass handleClick function to the child to fetch data
+        //here we had pass handleSubmit function to the child to fetch data
         <div> 
             <SearchBar onSubmit = {handleSubmit} />
             <ImageList images={images} />

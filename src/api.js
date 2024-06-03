@@ -17,8 +17,6 @@ const SearchImages = async (term) => {
         },
     });
 
-    return response.data.results;
-
     //in the only respose we get all the bunch of object which we don't needed, so we only get data.result
     return response.data.results;
 };
